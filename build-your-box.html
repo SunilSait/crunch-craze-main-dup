@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Box | Crunch Craze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="image/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page" id="top">
+    <header>
+      <a class="brand" href="index.html" aria-label="Crunch Craze home">
+        <img class="logo" src="image/logo.png" alt="Crunch Craze logo">
+      </a>
+      <div class="header-controls">
+        <button class="dark-toggle" type="button" aria-label="Switch to dark mode"><i class="cc-icon cc-icon-moon"
+            aria-hidden="true"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Switch to RTL layout">RTL</button>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <div class="dropdown">
+          <span class="menu-toggle">Home <span class="chevron" aria-hidden="true"></span></span>
+          <div class="submenu">
+            <a href="index.html">Home 1</a>
+            <a href="home2.html">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="build-your-box.html" aria-current="page">Build Your Box</a>
+        <a href="subscription-plans.html">Subscription Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <div class="nav-actions" aria-label="Quick controls">
+          <button class="dark-toggle" type="button" aria-label="Switch to dark mode"><i class="cc-icon cc-icon-moon"
+              aria-hidden="true"></i></button>
+          <button class="rtl-toggle" type="button" aria-label="Switch to RTL layout">RTL</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="builder-hero" aria-labelledby="builder-heading">
+        <div class="builder-hero-copy reveal-on-scroll">
+          <p class="section-kicker"> Build Your Box</p>
+          <h1 id="builder-heading">Create a snack box that matches your mood.</h1>
+          <p>Pick the size, choose your flavor families, add hand-picked snacks, and finish with gift-ready extras.</p>
+          <div class="builder-hero-actions">
+            <a class="button primary" href="#box-size">Start Building</a>
+            <a class="button secondary" href="#summary">View Summary</a>
+          </div>
+        </div>
+        <div class="builder-hero-art reveal-on-scroll" aria-hidden="true">
+          <img class="builder-hero-main" src="image/a4.png" alt="">
+          <img class="builder-float builder-float-one" src="image/a8.jpg" alt="">
+          <img class="builder-float builder-float-two" src="image/a11.jpg" alt="">
+          <img class="builder-float builder-float-three" src="image/a15.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="builder-process" aria-label="Build your box process">
+        <article class="reveal-on-scroll">
+          <span>01</span>
+          <strong>Choose Size</strong>
+          <p>Start with mini, standard, family, or party.</p>
+        </article>
+        <article class="reveal-on-scroll">
+          <span>02</span>
+          <strong>Pick Flavors</strong>
+          <p>Mix sweet, salty, healthy, and surprise snacks.</p>
+        </article>
+        <article class="reveal-on-scroll">
+          <span>03</span>
+          <strong>Add Extras</strong>
+          <p>Upgrade with wraps, drinks, dips, and notes.</p>
+        </article>
+        <article class="reveal-on-scroll">
+          <span>04</span>
+          <strong>Checkout</strong>
+          <p>Review the box and schedule delivery.</p>
+        </article>
+      </section>
+
+      <section class="builder-step" id="box-size" aria-labelledby="box-size-heading">
+        <div class="section-header reveal-on-scroll">
+          <p class="section-kicker"><i class="cc-icon cc-icon-star" aria-hidden="true"></i> Step 1</p>
+          <h2 id="box-size-heading">Select Your Box Size</h2>
+          <p class="section-intro">Choose the base that fits your snack plan. You can keep it personal or build for a
+            full group.</p>
+        </div>
+        <div class="builder-size-grid">
+          <article class="builder-size-card reveal-on-scroll mini-size" role="button" tabindex="0">
+            <i class="cc-icon cc-icon-package" aria-hidden="true"></i>
+            <h3>Mini Box</h3>
+            <p>5 Snacks</p>
+            <strong>Best for Individuals</strong>
+            <div>&#8377;499</div>
+          </article>
+          <article class="builder-size-card reveal-on-scroll standard-size is-selected" role="button" tabindex="0">
+            <i class="cc-icon cc-icon-star" aria-hidden="true"></i>
+            <h3>Standard Box</h3>
+            <p>10 Snacks</p>
+            <strong>Most Popular</strong>
+            <div>&#8377;899</div>
+          </article>
+          <article class="builder-size-card reveal-on-scroll family-size" role="button" tabindex="0">
+            <i class="cc-icon cc-icon-users" aria-hidden="true"></i>
+            <h3>Family Box</h3>
+            <p>20 Snacks</p>
+            <strong>Perfect for Families</strong>
+            <div>&#8377;1499</div>
+          </article>
+          <article class="builder-size-card reveal-on-scroll party-size" role="button" tabindex="0">
+            <i class="cc-icon cc-icon-party" aria-hidden="true"></i>
+            <h3>Party Box</h3>
+            <p>30+ Snacks</p>
+            <strong>Great for Events</strong>
+            <div>&#8377;2499</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="builder-step builder-categories" aria-labelledby="categories-heading">
+        <div class="section-header reveal-on-scroll">
+          <p class="section-kicker"><i class="cc-icon cc-icon-popcorn" aria-hidden="true"></i> Step 2</p>
+          <h2 id="categories-heading">Choose Snack Categories</h2>
+          <p class="section-intro">Tap your favorite flavor families so the box feels balanced from the first bite to
+            the last.</p>
+        </div>
+        <div class="builder-category-grid" aria-label="Snack categories">
+          <button type="button"><i class="cc-icon cc-icon-popcorn" aria-hidden="true"></i> Popcorn</button>
+          <button type="button"><i class="cc-icon cc-icon-bar" aria-hidden="true"></i> Chocolates</button>
+          <button type="button"><i class="cc-icon cc-icon-cookie" aria-hidden="true"></i> Cookies</button>
+          <button type="button"><i class="cc-icon cc-icon-chip" aria-hidden="true"></i> Chips</button>
+          <button type="button"><i class="cc-icon cc-icon-chip" aria-hidden="true"></i> Pretzels</button>
+          <button type="button"><i class="cc-icon cc-icon-nut" aria-hidden="true"></i> Dry Fruits</button>
+          <button type="button"><i class="cc-icon cc-icon-leaf" aria-hidden="true"></i> Granola</button>
+          <button type="button"><i class="cc-icon cc-icon-dumbbell" aria-hidden="true"></i> Protein Snacks</button>
+          <button type="button"><i class="cc-icon cc-icon-candy" aria-hidden="true"></i> Candies</button>
+          <button type="button"><i class="cc-icon cc-icon-nut" aria-hidden="true"></i> Mixed Nuts</button>
+        </div>
+      </section>
+
+      <section class="builder-step" aria-labelledby="snacks-heading">
+        <div class="section-header reveal-on-scroll">
+          <p class="section-kicker"><i class="cc-icon cc-icon-cart" aria-hidden="true"></i> Step 3</p>
+          <h2 id="snacks-heading">Select Your Snacks</h2>
+          <p class="section-intro">Popular picks are ready below. Adjust quantity and add the ones you want in this
+            month&apos;s box.</p>
+        </div>
+        <div class="builder-product-grid">
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c1.jpg" alt="Cheese Popcorn">
+            <div class="builder-product-body"><small>Best Seller</small>
+              <h3>Cheese Popcorn</h3><span>&#8377;199</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c2.jpg" alt="Caramel Popcorn">
+            <div class="builder-product-body"><small>Sweet Crunch</small>
+              <h3>Caramel Popcorn</h3><span>&#8377;229</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c3.jpg" alt="BBQ Chips">
+            <div class="builder-product-body"><small>Smoky</small>
+              <h3>BBQ Chips</h3><span>&#8377;149</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c4.jpg" alt="Chocolate Cookies">
+            <div class="builder-product-body"><small>Premium</small>
+              <h3>Chocolate Cookies</h3><span>&#8377;249</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/12.jpg" alt="Salted Almonds">
+            <div class="builder-product-body"><small>Healthy</small>
+              <h3>Salted Almonds</h3><span>&#8377;299</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/a14.jpg" alt="Brownie Bites">
+            <div class="builder-product-body"><small>Rich Cocoa</small>
+              <h3>Brownie Bites</h3><span>&#8377;259</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c5.jpg" alt="Granola Bites">
+            <div class="builder-product-body"><small>Light Bite</small>
+              <h3>Granola Bites</h3><span>&#8377;189</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c6.jpg" alt="Protein Bar">
+            <div class="builder-product-body"><small>Fitness</small>
+              <h3>Protein Bar</h3><span>&#8377;159</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c7.jpg" alt="Mixed Nuts">
+            <div class="builder-product-body"><small>Energy Mix</small>
+              <h3>Mixed Nuts</h3><span>&#8377;349</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+          <article class="builder-product-card reveal-on-scroll">
+            <img src="image/c8.jpg" alt="Fruit Candy">
+            <div class="builder-product-body"><small>Fun Pick</small>
+              <h3>Fruit Candy</h3><span>&#8377;129</span>
+              <div><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i class="cc-icon cc-icon-star"
+                  aria-hidden="true"></i><i class="cc-icon cc-icon-star" aria-hidden="true"></i><i
+                  class="cc-icon cc-icon-star" aria-hidden="true"></i></div>
+              <div class="qty-control"><button>-</button><strong>1</strong><button>+</button></div><a
+                class="button primary" href="#summary">Add to Box</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="builder-step" aria-labelledby="delivery-heading">
+        <div class="section-header reveal-on-scroll">
+          <p class="section-kicker"><i class="cc-icon cc-icon-truck" aria-hidden="true"></i> Step 4</p>
+          <h2 id="delivery-heading">Choose Delivery Frequency</h2>
+          <p class="section-intro">Keep it one-time for gifting, or make it recurring for monthly snack refills.</p>
+        </div>
+        <div class="delivery-grid">
+          <button type="button">
+            <i class="delivery-icon cc-icon cc-icon-calendar" aria-hidden="true"></i>
+            <strong>One-Time</strong>
+            <small>Gift or trial box</small>
+          </button>
+          <button type="button">
+            <i class="delivery-icon cc-icon cc-icon-package" aria-hidden="true"></i>
+            <strong>Weekly</strong>
+            <small>Fresh snack refill</small>
+          </button>
+          <button type="button">
+            <i class="delivery-icon cc-icon cc-icon-package" aria-hidden="true"></i>
+            <strong>Bi-Weekly</strong>
+            <small>Every two weeks</small>
+          </button>
+          <button class="is-selected" type="button">
+            <i class="delivery-icon cc-icon cc-icon-star" aria-hidden="true"></i>
+            <strong>Monthly</strong>
+            <small>Most popular plan</small>
+          </button>
+          <button type="button">
+            <i class="delivery-icon cc-icon cc-icon-package" aria-hidden="true"></i>
+            <strong>Every 2 Months</strong>
+            <small>Slow and steady</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="builder-step extras-summary" id="summary" aria-label="Extras and order summary">
+        <div class="extras-panel reveal-on-scroll">
+          <div class="builder-panel-heading">
+            <p class="section-kicker"><i class="cc-icon cc-icon-gift" aria-hidden="true"></i> Step 5</p>
+            <h2>Add Extras</h2>
+            <p>Make the box feel more personal with small upgrades before checkout.</p>
+          </div>
+          <div class="extras-card-grid">
+            <label class="extra-card">
+              <input type="checkbox">
+              <img class="extra-image" src="image/c6.jpg" alt="Coffee sachets with cookies">
+              <span class="extra-copy"><strong>Coffee Sachets</strong><small>Perfect with cookies</small></span>
+              <span class="extra-price">+&#8377;99</span>
+            </label>
+            <label class="extra-card">
+              <input type="checkbox">
+              <img class="extra-image" src="image/a30.jpg" alt="Soft drinks add-on">
+              <span class="extra-copy"><strong>Soft Drinks</strong><small>Chilled party pairing</small></span>
+              <span class="extra-price">+&#8377;149</span>
+            </label>
+            <label class="extra-card is-selected">
+              <input type="checkbox" checked>
+              <img class="extra-image" src="image/a35.png" alt="Birthday gift wrap">
+              <span class="extra-copy"><strong>Birthday Gift Wrap</strong><small>Ribbon, tag, and festive
+                  wrap</small></span>
+              <span class="extra-price">+&#8377;79</span>
+            </label>
+            <label class="extra-card">
+              <input type="checkbox">
+              <img class="extra-image" src="image/a36.png" alt="Personalized message card">
+              <span class="extra-copy"><strong>Personalized Message</strong><small>Add a note inside</small></span>
+              <span class="extra-price">+&#8377;49</span>
+            </label>
+            <label class="extra-card">
+              <input type="checkbox">
+              <img class="extra-image" src="image/c9.jpg" alt="Surprise snack">
+              <span class="extra-copy"><strong>Surprise Snack</strong><small>Chef's mystery pick</small></span>
+              <span class="extra-price">+&#8377;99</span>
+            </label>
+            <label class="extra-card">
+              <input type="checkbox">
+              <img class="extra-image" src="image/c2.jpg" alt="Dip combo with snack pairing">
+              <span class="extra-copy"><strong>Dip Combo</strong><small>Cheese and salsa dips</small></span>
+              <span class="extra-price">+&#8377;89</span>
+            </label>
+          </div>
+          <div class="extras-note-card">
+            <div class="extras-note-icon"><i class="cc-icon cc-icon-package" aria-hidden="true"></i></div>
+            <div>
+              <h3>Finishing Touches</h3>
+              <p>Your box will be packed fresh with sealed snack pouches, a flavor card, and a small thank-you note.</p>
+              <div class="extras-note-pills">
+                <span>Fresh Packed</span>
+                <span>Eco Box</span>
+                <span>Gift Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="extras-divider" aria-hidden="true">
+          <img src="image/a8.jpg" alt="decorative divider">
+        </div>
+        <aside class="summary-card reveal-on-scroll">
+          <div class="summary-top">
+            <div>
+              <p class="section-kicker"><i class="cc-icon cc-icon-credit-card" aria-hidden="true"></i> Step 6</p>
+              <h2>Order Summary</h2>
+            </div>
+            <span class="summary-badge">Monthly</span>
+          </div>
+          <div class="summary-box-preview">
+            <img src="image/a4.png" alt="Standard snack box preview">
+            <div>
+              <strong>Standard Box</strong>
+              <span>10 snack slots selected</span>
+            </div>
+          </div>
+          <div class="summary-snacks" aria-label="Selected snacks">
+            <span>&#10003; Cheese Popcorn</span>
+            <span>&#10003; BBQ Chips</span>
+            <span>&#10003; Chocolate Cookies</span>
+            <span>&#10003; Mixed Nuts</span>
+            <span>&#10003; Granola Bites</span>
+          </div>
+          <div class="summary-lines">
+            <div><span>Box Size</span><strong>Standard Box</strong></div>
+            <div><span>Delivery</span><strong>Monthly</strong></div>
+            <div><span>Extras</span><strong>Gift Wrap</strong></div>
+            <div><span>Subtotal</span><strong>&#8377;899</strong></div>
+            <div><span>Extras</span><strong>&#8377;79</strong></div>
+            <div><span>Delivery</span><strong>Free</strong></div>
+          </div>
+          <div class="summary-total-row">
+            <strong class="summary-total">Total</strong>
+            <strong class="summary-total">&#8377;978</strong>
+          </div>
+          <div class="summary-actions">
+            <a class="button primary" href="#">Continue to Checkout</a>
+            <a class="button" href="#">Save for Later</a>
+          </div>
+        </aside>
+      </section>
+
+
+
+      <section class="builder-step" aria-labelledby="recommended-heading">
+        <div class="section-header reveal-on-scroll">
+          <p class="section-kicker"><i class="cc-icon cc-icon-star" aria-hidden="true"></i> Recommended for You</p>
+          <h2 id="recommended-heading">Snack Picks Based on Your Box</h2>
+        </div>
+        <div class="recommend-grid">
+          <article><img src="image/a9.jpg" alt="Caramel Popcorn">
+            <div>
+              <h3>Caramel Popcorn</h3>
+              <p>Buttery caramel crunch for sweet snack cravings.</p>
+            </div>
+          </article>
+          <article><img src="image/a13.jpg" alt="Nachos">
+            <div>
+              <h3>Nachos</h3>
+              <p>Crispy nachos that pair well with dips and drinks.</p>
+            </div>
+          </article>
+          <article><img src="image/a11.jpg" alt="Chocolate Bar">
+            <div>
+              <h3>Chocolate Bar</h3>
+              <p>Rich chocolate bites for a quick dessert break.</p>
+            </div>
+          </article>
+          <article><img src="image/a15.jpg" alt="Trail Mix">
+            <div>
+              <h3>Trail Mix</h3>
+              <p>A balanced mix of nuts, seeds, and light sweetness.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="ccf-footer">
+
+    <div class="ccf-container">
+
+      <!-- Brand -->
+      <div class="ccf-brand">
+
+        <a href="index.html" class="ccf-logo-wrap">
+          <img src="image/logo.png" alt="Crunch Craze" class="ccf-logo">
+        </a>
+
+
+        <p class="ccf-desc">
+          Discover delicious popcorn, gourmet snacks and personalized snack
+          boxes delivered right to your doorstep. Enjoy fresh flavors,
+          flexible subscriptions and premium snacking experiences.
+        </p>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div class="ccf-column">
+
+        <h3>Quick Links</h3>
+
+        <ul>
+
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="build-your-box.html">Build Your Box</a></li>
+
+          <li><a href="subscription-plans.html">Subscription Plans</a></li>
+
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Categories -->
+
+      <div class="ccf-column">
+
+        <h3>Categories</h3>
+
+        <ul>
+
+          <li><i class="cc-icon cc-icon-popcorn"></i> Popcorn</li>
+
+          <li><i class="cc-icon cc-icon-cookie"></i> Cookies</li>
+
+          <li><i class="cc-icon cc-icon-bar"></i> Chocolates</li>
+
+          <li><i class="cc-icon cc-icon-nut"></i> Nuts</li>
+
+          <li><i class="cc-icon cc-icon-chip"></i> Chips</li>
+
+          <li><i class="cc-icon cc-icon-leaf"></i> Healthy Snacks</li>
+
+        </ul>
+
+      </div>
+
+      <!-- Support -->
+
+      <div class="ccf-column">
+
+        <h3>Customer Care</h3>
+
+        <ul>
+
+          <li><a href="#">Shipping & Delivery</a></li>
+
+          <li><a href="#">Returns & Refunds</a></li>
+
+          <li><a href="#">Privacy Policy</a></li>
+
+          <li><a href="#">Terms & Conditions</a></li>
+
+          <li><a href="#">Help Center</a></li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Contact -->
+
+      <div class="ccf-column">
+
+        <h3>Contact Us</h3>
+
+        <div class="ccf-contact">
+
+          <span>
+            <i class="cc-icon cc-icon-map-pin"></i>
+            Madurai, Tamil Nadu, India
+          </span>
+
+          <span>
+            <i class="cc-icon cc-icon-mail"></i>
+            support@crinchcraze.com
+          </span>
+
+          <span>
+            <i class="cc-icon cc-icon-phone"></i>
+            +91 98765 43210
+          </span>
+
+          <span>
+            <i class="cc-icon cc-icon-clock"></i>
+            Mon - Sat : 9:00 AM - 7:00 PM
+          </span>
+
+        </div>
+
+        <h4>Follow Us</h4>
+
+        <div class="ccf-social">
+
+          <a href="#"><span class="social-icon">f</span></a>
+
+          <a href="#"><span class="social-icon camera-icon"></span></a>
+
+          <a href="#"><span class="social-icon">X</span></a>
+
+          <a href="#"><span class="social-icon">P</span></a>
+
+          <a href="#"><span class="social-icon play-icon"></span></a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="ccf-bottom">
+
+      <p>© 2026 Crunch Craze. All Rights Reserved.</p>
+
+      <p>Designed for Snack Lovers.</p>
+
+    </div>
+
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

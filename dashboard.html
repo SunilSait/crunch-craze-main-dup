@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Crunch Craze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="image/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-body">
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="dashboard-logo" href="index.html" aria-label="Crunch Craze home"><img class="logo" src="image/logo.png"
+          alt="Crunch Craze logo">
+      </a>
+
+      <button class="dashboard-menu-toggle" type="button" aria-controls="dashboard-menu" aria-expanded="false"
+        aria-label="Open dashboard menu"><span></span><span></span><span></span></button>
+      <nav class="dashboard-menu" id="dashboard-menu" aria-label="Account menu">
+        <a class="is-active" href="dashboard.html"><i class="cc-icon cc-icon-home" aria-hidden="true"></i> Dashboard</a>
+        <a href="subscription.html"><i class="cc-icon cc-icon-package" aria-hidden="true"></i> My Subscription</a>
+        <a href="orders.html"><i class="cc-icon cc-icon-cart" aria-hidden="true"></i> My Orders</a>
+        <a href="snack-box.html"><i class="cc-icon cc-icon-cookie" aria-hidden="true"></i> My Snack Box</a>
+        <a href="rewards.html"><i class="cc-icon cc-icon-gift" aria-hidden="true"></i> Rewards</a>
+        <a href="track-delivery.html"><i class="cc-icon cc-icon-truck" aria-hidden="true"></i> Track Delivery</a>
+        <a href="payments.html"><i class="cc-icon cc-icon-credit-card" aria-hidden="true"></i> Payments</a>
+        <a href="address-book.html"><i class="cc-icon cc-icon-map-pin" aria-hidden="true"></i> Address Book</a>
+        <a href="#" class="logout-link" onclick="openLogoutModal(); return false;">
+          <i class="cc-icon cc-icon-logout"></i>
+          Logout
+        </a>
+      </nav>
+
+    </aside>
+
+    <div class="page-overlay" aria-hidden="true"></div>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="dashboard-topbar-left">
+          <div>
+            <h1>Welcome Back</h1>
+            <p>We're again here to snack with you.</p>
+          </div>
+        </div>
+
+        <div class="dashboard-topbar-right dashboard-actions">
+
+          <div class="page-tools" aria-label="Page display tools">
+
+            <button class="rtl-toggle" type="button">
+              RTL
+            </button>
+
+            <button class="dark-toggle" type="button">
+              <i class="cc-icon cc-icon-moon"></i>
+            </button>
+
+            <div class="notification-wrapper">
+              <button class="notification-btn" id="notificationBtn">
+                <i class="cc-icon cc-icon-message"></i>
+                <span class="notification-badge">5</span>
+              </button>
+            </div>
+
+            <a href="settings.html" class="topbar-icon">
+              <i class="cc-icon cc-icon-settings"></i>
+            </a>
+
+          </div>
+
+          <div class="profile-chip">
+            <img src="image/profile.jpg" alt="Aishwarya" class="profile-avatar">
+            <strong>Aishwarya</strong>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="notification-popup" id="notificationPopup">
+
+        <div class="notification-header">
+
+          <h3>Notifications</h3>
+
+          <button class="mark-read-btn">
+
+            Mark all as read
+
+          </button>
+
+        </div>
+
+        <div class="notification-list">
+
+          <!-- Notification -->
+
+          <div class="notification-item unread">
+
+            <div class="notification-icon">
+
+              <i class="cc-icon cc-icon-package"></i>
+
+            </div>
+
+            <div class="notification-content">
+
+              <h4>Your snack box is being prepared</h4>
+
+              <p>Our team has started preparing your monthly snack box.</p>
+
+              <span>2 minutes ago</span>
+
+            </div>
+
+          </div>
+
+          <!-- Notification -->
+
+          <div class="notification-item unread">
+
+            <div class="notification-icon">
+
+              <i class="cc-icon cc-icon-truck"></i>
+
+            </div>
+
+            <div class="notification-content">
+
+              <h4>Order Packed Successfully</h4>
+
+              <p>Your order has been packed and is ready to ship.</p>
+
+              <span>Today • 10:30 AM</span>
+
+            </div>
+
+          </div>
+
+          <!-- Notification -->
+
+          <div class="notification-item">
+
+            <div class="notification-icon">
+
+              <i class="cc-icon cc-icon-truck"></i>
+
+            </div>
+
+            <div class="notification-content">
+
+              <h4>Out For Delivery</h4>
+
+              <p>Your Crunch Craze snack box is on the way.</p>
+
+              <span>Today • 08:10 AM</span>
+
+            </div>
+
+          </div>
+
+          <!-- Notification -->
+
+          <div class="notification-item">
+
+            <div class="notification-icon">
+
+              <i class="cc-icon cc-icon-gift"></i>
+
+            </div>
+
+            <div class="notification-content">
+
+              <h4>Reward Points Added</h4>
+
+              <p>50 reward points have been added to your account.</p>
+
+              <span>Yesterday</span>
+
+            </div>
+
+          </div>
+
+          <!-- Notification -->
+
+          <div class="notification-item">
+
+            <div class="notification-icon">
+
+              <i class="cc-icon cc-icon-cookie"></i>
+
+            </div>
+
+            <div class="notification-content">
+
+              <h4>New Coupon Available</h4>
+
+              <p>Use <strong>WELCOME20</strong> to save 20% today.</p>
+
+              <span>Yesterday</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <section class="dashboard-grid">
+        <article class="dashboard-panel delivery-panel" id="delivery-tracker">
+          <div>
+            <h2>Delivery Tracker</h2>
+            <div class="delivery-progress">
+              <div class="delivery-step is-done"><span>&#10003;</span><strong>Order Confirmed</strong><small>22
+                  June</small></div>
+              <div class="delivery-step is-done"><span>&#10003;</span><strong>Packed</strong><small>23 June</small>
+              </div>
+              <div class="delivery-step is-done"><span>&#10003;</span><strong>Shipped</strong><small>24 June</small>
+              </div>
+              <div class="delivery-step is-current"><span>&#9632;</span><strong>Out for Delivery</strong><small>26
+                  June</small></div>
+              <div class="delivery-step"><strong>Delivered</strong><small>28 June</small></div>
+            </div>
+          </div>
+          <aside class="track-box">
+
+            <h3 class="track-title">Arriving Soon</h3>
+
+            <p class="track-text">
+              Expected between 9:00 AM and 12:00 PM.
+            </p>
+
+            <span class="track-courier">
+              Courier: Crunch Express
+            </span>
+
+            <a href="#" class="track-btn">
+              Track Live
+            </a>
+
+          </aside>
+        </article>
+
+        <article class="dashboard-panel quick-actions-panel">
+          <div class="panel-heading">
+            <h2>Quick Actions</h2>
+            <a href="#">Manage</a>
+          </div>
+          <div class="quick-action-grid">
+            <a href="build-your-box.html"><span>+</span><strong>Add Snacks</strong></a>
+            <a href="payments.html"><span>%</span><strong>Use Coupons</strong></a>
+            <a href="address-book.html"><span>@</span><strong>Update Address</strong></a>
+          </div>
+        </article>
+
+        <article class="dashboard-panel monthly-panel" id="monthly-box">
+          <div class="panel-heading">
+            <h2>This Month's Snack Box</h2>
+            <a href="#">View All</a>
+          </div>
+          <div class="dashboard-snack-row">
+            <figure><img src="image/a8.jpg" alt="Cheese popcorn">
+              <figcaption>Cheese Popcorn</figcaption>
+            </figure>
+            <figure><img src="image/a11.jpg" alt="Choco cookies">
+              <figcaption>Choco Cookies</figcaption>
+            </figure>
+            <figure><img src="image/a10.jpg" alt="BBQ chips">
+              <figcaption>BBQ Chips</figcaption>
+            </figure>
+            <figure><img src="image/a15.jpg" alt="Mixed nuts">
+              <figcaption>Mixed Nuts</figcaption>
+            </figure>
+            <figure><img src="image/a5.png" alt="Surprise snack">
+              <figcaption>Surprise Snack</figcaption>
+            </figure>
+          </div>
+          <a href="build-your-box.html" class="button primary">Customize Next Box</a>
+        </article>
+
+        <article class="dashboard-panel subscription-panel" id="subscription-status">
+          <h2>Subscription Status</h2>
+          <div class="subscription-card-body">
+            <img src="image/a7.png" alt="Crunch Craze subscription box">
+            <dl>
+              <dt>Current Plan</dt>
+              <dd>Movie Night Box</dd>
+              <dt>Renewal Date</dt>
+              <dd>15 July 2026</dd>
+              <dt>Status</dt>
+              <dd class="status-active">&#10003; Active</dd>
+            </dl>
+          </div>
+          <div class="subscription-actions">
+            <a class="button primary" href="subscription-plans.html">Upgrade</a>
+            <a class="button" href="#">Pause</a>
+            <a class="button danger-button" href="#">Cancel</a>
+          </div>
+        </article>
+
+        <article class="dashboard-panel recommendations-panel" id="recommended-snacks">
+          <div class="panel-heading">
+            <h2>Recommended For You</h2>
+            <a href="#">View All</a>
+          </div>
+          <div class="recommendation-grid">
+            <article><img src="image/a9.jpg" alt="Caramel popcorn"><strong>Caramel Popcorn</strong><span>&#8377;199
+                <button type="button">+</button></span></article>
+            <article><img src="image/a14.jpg" alt="Brownie bites"><strong>Brownie Bites</strong><span>&#8377;249
+                <button type="button">+</button></span></article>
+            <article><img src="image/12.jpg" alt="Trail mix"><strong>Trail Mix</strong><span>&#8377;199 <button
+                  type="button">+</button></span></article>
+            <article><img src="image/a13.jpg" alt="Nacho chips"><strong>Nacho Chips</strong><span>&#8377;149 <button
+                  type="button">+</button></span></article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel rewards-panel" id="rewards-wallet">
+          <h2>Rewards Wallet</h2>
+          <div class="reward-ring"><i class="cc-icon cc-icon-gift" aria-hidden="true"></i></div>
+          <strong>2,450</strong>
+          <p>Current Points</p>
+          <small>2,550 points to unlock next reward: Free Snack Box</small>
+        </article>
+
+        <article class="dashboard-panel spending-panel">
+          <div class="panel-heading">
+            <h2>Monthly Spending</h2>
+            <span>6 Months</span>
+          </div>
+          <div class="bar-chart" aria-label="Monthly spending chart">
+            <span style="height: 58%"><small>Jan</small></span>
+            <span style="height: 82%"><small>Feb</small></span>
+            <span style="height: 68%"><small>Mar</small></span>
+            <span style="height: 36%"><small>Apr</small></span>
+            <span style="height: 56%"><small>May</small></span>
+            <span style="height: 54%"><small>Jun</small></span>
+          </div>
+        </article>
+
+        <article class="dashboard-panel offers-panel">
+          <div class="panel-heading">
+            <h2>Special Offers</h2>
+            <a href="#">View All</a>
+          </div>
+          <div class="offer-banner">
+            <div>
+              <strong>Summer Snack Fest</strong>
+              <span>Up to 25% OFF</span>
+              <a href="#" class="button primary">Shop Now</a>
+            </div>
+            <img src="image/a6.png" alt="Special snack offer">
+          </div>
+        </article>
+
+        <article class="dashboard-panel orders-panel" id="recent-orders">
+          <div class="panel-heading">
+            <h2>Recent Orders</h2>
+            <a href="#">View All</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#CC101</td>
+                <td>15 Jun 2026</td>
+                <td>&#8377;899</td>
+                <td><span class="delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#CC102</td>
+                <td>25 Jun 2026</td>
+                <td>&#8377;499</td>
+                <td><span class="shipped">Shipped</span></td>
+              </tr>
+              <tr>
+                <td>#CC103</td>
+                <td>30 Jun 2026</td>
+                <td>&#8377;1,699</td>
+                <td><span class="processing">Processing</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section class="spin-banner">
+        <img src="image/a4.png" alt="Snack reward box">
+        <div>
+          <h2>Spin the Wheel &amp; Win!</h2>
+          <p>Spin once a month and win exciting snack rewards.</p>
+        </div>
+        <a href="#" class="button">Shop Now &rarr;</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Sidebar toggle + overlay handling for small screens
+    (function () {
+      var toggle = document.querySelector('.dashboard-menu-toggle');
+      var sidebar = document.querySelector('.dashboard-sidebar');
+      var overlay = document.querySelector('.page-overlay');
+      var links = document.querySelectorAll('.dashboard-menu a');
+      if (!toggle || !sidebar) return;
+
+      function openSidebar() {
+        sidebar.classList.add('expanded');
+        toggle.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        if (overlay) overlay.style.display = 'block';
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove('expanded');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (overlay) overlay.style.display = '';
+      }
+
+      toggle.addEventListener('click', function () {
+        if (sidebar.classList.contains('expanded')) closeSidebar(); else openSidebar();
+      });
+
+      if (overlay) overlay.addEventListener('click', closeSidebar);
+
+      // close when a nav link is clicked (mobile)
+      links.forEach(function (a) { a.addEventListener('click', function () { if (window.innerWidth <= 820) closeSidebar(); }); });
+
+      // close on Escape
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSidebar(); });
+
+      // ensure sidebar reset when resizing to desktop
+      window.addEventListener('resize', function () { if (window.innerWidth > 820) { sidebar.classList.remove('expanded'); toggle.classList.remove('is-open'); if (overlay) overlay.style.display = ''; } });
+    })();
+  </script>
+
+  <div class="logout-modal" id="logoutModal">
+
+    <div class="logout-modal-box">
+
+      <i class="cc-icon cc-icon-logout logout-modal-icon"></i>
+
+      <h2>Logout?</h2>
+
+      <p>Are you sure you want to logout from your account?</p>
+
+      <div class="logout-modal-actions">
+
+        <button class="cancel-btn" onclick="closeLogoutModal()">
+          No
+        </button>
+
+        <button class="logout-btn" onclick="logoutNow()">
+          Yes
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
