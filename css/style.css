@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --font-main: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -74,15 +74,6 @@ button,
 input,
 textarea,
 select,
-optgroup,
-option,
-table,
-th,
-td,
-legend,
-fieldset,
-summary,
-details,
 a,
 p,
 h1,
@@ -16694,7 +16685,7 @@ body.dark-mode .recommend-grid p {
   max-width: 560px !important;
   color: #fff7ed !important;
   font-size: 17px !important;
-  font-weight: 300 !important;
+  font-weight: 300px;
   line-height: 1.6 !important;
 }
 
