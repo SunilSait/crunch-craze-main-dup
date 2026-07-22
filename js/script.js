@@ -222,7 +222,6 @@ const COMMON_NAVBAR_HTML = `
         <a href="build-your-box.html">Build Your Box</a>
         <a href="subscription-plans.html">Subscription Plans</a>
         <a href="contact.html">Contact</a>
-        <a href="dashboard.html">Dashboard</a>
         <div class="nav-actions" aria-label="Quick controls">
           <button class="dark-toggle" type="button" aria-label="Switch to dark mode"><i class="cc-icon cc-icon-moon" aria-hidden="true"></i></button>
           <button class="rtl-toggle" type="button" aria-label="Switch to RTL layout">RTL</button>
@@ -254,7 +253,6 @@ const COMMON_FOOTER_HTML = `
           <li><a href="about.html">About</a></li>
           <li><a href="build-your-box.html">Build Your Box</a></li>
           <li><a href="subscription-plans.html">Subscription Plans</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
@@ -377,29 +375,6 @@ const getButtonIconName = (element) => {
 };
 
 const enhanceSiteIcons = () => {
-  const dashboardIconMap = {
-    "dashboard.html": "target",
-    "subscription.html": "gift",
-    "orders.html": "package",
-    "snack-box.html": "popcorn",
-    "rewards.html": "star",
-    "favorites.html": "heart",
-    "track-delivery.html": "truck",
-    "payments.html": "credit-card",
-    "address-book.html": "map-pin",
-    "notifications.html": "message",
-    "settings.html": "settings"
-  };
-
-  document.querySelectorAll(".dashboard-menu a").forEach((link) => {
-    const href = link.getAttribute("href") || "";
-    const iconName = dashboardIconMap[href];
-    const firstSpan = link.querySelector(":scope > span:first-child");
-
-    if (iconName && firstSpan && !firstSpan.classList.contains("cc-icon")) {
-      firstSpan.outerHTML = ccIcon(iconName, "dashboard-menu-icon");
-    }
-  });
 
   document.querySelectorAll(".button, .dashboard-actions button, .coupon-list button").forEach((button) => {
     if (button.querySelector(".cc-icon") || button.classList.contains("dark-toggle") || button.classList.contains("rtl-toggle")) {
