@@ -222,6 +222,7 @@ const COMMON_NAVBAR_HTML = `
         <a href="build-your-box.html">Build Your Box</a>
         <a href="subscription-plans.html">Subscription Plans</a>
         <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
         <div class="nav-actions" aria-label="Quick controls">
           <button class="dark-toggle" type="button" aria-label="Switch to dark mode"><i class="cc-icon cc-icon-moon" aria-hidden="true"></i></button>
           <button class="rtl-toggle" type="button" aria-label="Switch to RTL layout">RTL</button>
@@ -254,6 +255,7 @@ const COMMON_FOOTER_HTML = `
           <li><a href="build-your-box.html">Build Your Box</a></li>
           <li><a href="subscription-plans.html">Subscription Plans</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
         </ul>
       </div>
 
